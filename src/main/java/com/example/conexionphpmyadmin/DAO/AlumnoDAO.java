@@ -1,5 +1,5 @@
 package com.example.conexionphpmyadmin.DAO;
-import com.example.conexionPHPMyAdmin.Model.Alumno;
+import com.example.conexionphpmyadmin.modelo.Alumno;
 import java.util.List;
 public interface AlumnoDAO {
     List<Alumno> listarAlumnos();

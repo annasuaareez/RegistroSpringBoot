@@ -1,6 +1,6 @@
 package com.example.conexionphpmyadmin.DAO;
 
-import com.example.conexionPHPMyAdmin.Model.Alumno;
+import com.example.conexionphpmyadmin.modelo.Alumno;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;

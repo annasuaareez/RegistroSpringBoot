@@ -1,6 +1,6 @@
 package com.example.conexionphpmyadmin.Controlador;
 
-import com.example.conexionPHPMyAdmin.Model.Alumno;
+import com.example.conexionphpmyadmin.modelo.Alumno;
 import com.example.conexionphpmyadmin.DAO.AlumnoDAO;
 import com.example.conexionphpmyadmin.DAO.UserDAO;
 import com.example.conexionphpmyadmin.DAO.UserDAOImp;
