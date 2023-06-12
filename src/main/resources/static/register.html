@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registrarse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel=" stylesheet" href="css/register.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <main>
+    <form class="form" id="registro">
+      <span class="register">Registrarse</span>
+      <input placeholder="Nombre de Usuario" type="text" id="username" required>
+      <input placeholder="Contrasena" type="password" id="password" required>
+      <input placeholder="Repita la contrasena" type="password" id="confirm-password" required>
+      <button class="boton" id="boton" type="button" onclick="register()">Registrarse</button>
+      <span class="span">¿Ya tiene una cuenta? <a href="../login.html">  Log In</a></span>
+      <p id="message"></p>
+    </form>
+  </main>
+  <script src="js/register.js"></script>
+</body>
+</html>

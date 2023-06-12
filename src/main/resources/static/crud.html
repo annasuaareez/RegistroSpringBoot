@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crud</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel=" stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="tabla">
+            <h1>Gestión Alumnos</h1>
+            <div class="buscar">
+                <i class="fas fa-search"></i>
+                <input class="input-field" type="text" id="search-input" placeholder="SEARCH" onkeyup="buscar()" />
+            </div>
+            <table id="alumno">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Nota</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <div>
+                <button onclick="openDialog('dialog2')">Crear</button>
+            </div>
+        </div>
+        <dialog id="dialog1">
+            <i class="closeIcon fa-solid fa-xmark" onclick="closeDialog('dialog1')" style="color: #9d6f4d;"></i>
+            <div>
+                <p>Editar Alumno</p>
+                <input type="text" placeholder="Introduce id a modificar" id="idAlumno" style="display: none;">
+                <input type="text" placeholder ="Introduce el nuevo nombre" id="txtAlumnoNuevo">
+                <input type="text" placeholder ="Introduce la nueva nota" id="txtNotaNueva">
+                <button onclick=edit()>Guardar Cambios</button>
+                <p class="message"></p>
+            </div>
+        </dialog>
+
+        <dialog id="dialog2">
+            <i class="closeIcon fa-solid fa-xmark" onclick="closeDialog('dialog2')" style="color: #9d6f4d;"></i>
+            <div>
+                <input type="text" placeholder="Introduce nombre" id="txtAlumno">
+                <input type="text" placeholder="Introduce la nota" id="txtNota">
+                <button onclick ="add()">Guardar</button>
+                <p class="message"></p>
+            </div>
+        </dialog>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/tabla.js"></script>
+</html>

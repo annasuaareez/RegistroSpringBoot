@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <form class="form" id="loginForm">
+    <span class="register">Iniciar Sesión</span>
+    <input placeholder="Nombre de Usuario" type="text" id="username" required>
+    <input placeholder="Contraseña" type="password" id="password" required>
+    <button class="boton" id="boton" type="button" onclick="login()">Iniciar Sesión</button>
+    <span class="span">¿No tiene una cuenta? <a href="../register.html">  Sign Up</a></span>
+    <p id="message"></p>
+  </form>
+  <script src="js/login.js"></script>
+</body>
+</html>
